@@ -1,0 +1,113 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+.app {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-container,
+.destinations-section {
+  padding: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.destination-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #00000033;
+}
+
+.destination-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.category {
+  display: inline-block;
+  background-color: #00000055;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 13px;
+  border-radius: 10em;
+}
+
+.search-input {
+  margin: 10px 0;
+}
+
+.custom-label {
+  color: #176b36;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
